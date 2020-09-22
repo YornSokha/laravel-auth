@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
+{{--        <meta name="viewport" content="width=device-width, initial-scale=1">--}}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         {{-- CSRF Token --}}
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -12,6 +12,7 @@
         <meta name="description" content="">
         <meta name="author" content="Jeremy Kenedy">
         <link rel="shortcut icon" href="/favicon.ico">
+
 
         {{-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --}}
         <!--[if lt IE 9]>
@@ -70,7 +71,7 @@
 
         {{-- Scripts --}}
         <script src="{{ mix('/js/app.js') }}"></script>
-        {!! HTML::script('//maps.googleapis.com/maps/api/js?key='.env("GOOGLEMAPS_API_KEY").'&libraries=places&dummy=.js', array('type' => 'text/javascript')) !!}
+{{--        {!! HTML::script('//maps.googleapis.com/maps/api/js?key='.env("GOOGLEMAPS_API_KEY").'&libraries=places&dummy=.js', array('type' => 'text/javascript')) !!}--}}
 
         @yield('footer_scripts')
 

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
@@ -12,6 +12,7 @@
         <meta name="description" content="">
         <meta name="author" content="Jeremy Kenedy">
         <link rel="shortcut icon" href="/favicon.ico">
+
 
         
         <!--[if lt IE 9]>
@@ -70,7 +71,6 @@
 
         
         <script src="<?php echo e(mix('/js/app.js')); ?>"></script>
-        <?php echo HTML::script('//maps.googleapis.com/maps/api/js?key='.env("GOOGLEMAPS_API_KEY").'&libraries=places&dummy=.js', array('type' => 'text/javascript')); ?>
 
 
         <?php echo $__env->yieldContent('footer_scripts'); ?>

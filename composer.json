@@ -23,7 +23,9 @@
         "socialiteproviders/instagram": "^3.0",
         "socialiteproviders/twitch": "^3.0",
         "socialiteproviders/youtube": "^3.0",
-        "webpatser/laravel-uuid": "^2.0"
+        "webpatser/laravel-uuid": "^2.0",
+        "kylekatarnls/laravel-carbon-2": "^1.0.0",
+        "nesbot/carbon": "2.0.0-beta.2 as 1.25.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

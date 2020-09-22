@@ -124,4 +124,13 @@ Route::group(['middleware'=> ['auth', 'activated', 'role:admin']], function () {
     Route::get('php', 'AdminDetailsController@listPHPInfo');
     Route::get('routes', 'AdminDetailsController@listRoutes');
 
+    Route::get('/expense', 'ExpenseController@index');
+    Route::post('/expense/createExpense', 'ExpenseController@createExpense')->name('expense.createExpense');
+    Route::get('/expense/getExpenses', 'ExpenseController@getExpenses')->name('expense.getExpenses');
+    Route::post('/expense/updateExpense', 'ExpenseController@updateExpense')->name('expense.updateExpense');
+    Route::post('/expense/deleteExpense', 'ExpenseController@deleteExpense')->name('expense.deleteExpense');
+
+    Route::get('/revenue', 'RevenueController@index');
+
 });
+Route::get('/revenue/getRevenue', 'RevenueController@getRevenue')->name('revenue.getRevenue');

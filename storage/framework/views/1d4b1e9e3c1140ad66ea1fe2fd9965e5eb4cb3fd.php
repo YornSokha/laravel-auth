@@ -34,6 +34,12 @@
                             <li <?php echo e(Request::is('routes') ? 'class=active' : null); ?>><?php echo HTML::link(url('/routes'), Lang::get('titles.adminRoutes')); ?></li>
                         </ul>
                     </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo e(url('/revenue')); ?>">ចំណូល</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="<?php echo e(url('/expense')); ?>">ចំណាយ</a>
+                    </li>
                 <?php endif; ?>
             </ul>
 

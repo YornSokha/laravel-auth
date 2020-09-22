@@ -33,6 +33,12 @@
                             <li {{ Request::is('routes') ? 'class=active' : null }}>{!! HTML::link(url('/routes'), Lang::get('titles.adminRoutes')) !!}</li>
                         </ul>
                     </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/revenue') }}">ចំណូល</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/expense') }}">ចំណាយ</a>
+                    </li>
                 @endrole
             </ul>
 
